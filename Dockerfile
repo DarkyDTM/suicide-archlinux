@@ -1,5 +1,5 @@
 FROM archlinux/archlinux
 
-COPY bash.bashrc /etc/
+COPY config.fish /etc/fish/
 
 ENTRYPOINT ["bash"]
