@@ -3,7 +3,7 @@
 # Set warning message
 echo "==================================="
 echo "WARNING: Suicide-ArchLinux installed"
-echo "         (https://qntm.org/suicide)"
+echo "         (https://github.com/darkydtm/suicide-archlinux)"
 echo "==================================="
 echo
 
