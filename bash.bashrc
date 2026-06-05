@@ -40,11 +40,11 @@ function __sl_set_ps1 {
      if [ -z "$FAILED_AT" ]; then
           PROMPT_COLOR=$CLR_L_GREEN
           COUNT_COLOR=$CLR_YELLOW
-          TERMINAL_TITLE="Suicide Linux"
+          TERMINAL_TITLE="Suicide ArchLinux"
      else
           PROMPT_COLOR=$CLR_L_RED
           COUNT_COLOR=$CLR_L_RED
-          TERMINAL_TITLE="Suicide Linux | (×_×)"
+          TERMINAL_TITLE="Suicide ArchLinux | (×_×)"
      fi
 
      TERMINAL_TITLE="$TERMINAL_TITLE | survived $COUNT commands"
