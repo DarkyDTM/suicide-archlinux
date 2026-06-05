@@ -1,4 +1,4 @@
-Suicide Linux
+Suicide ArchLinux
 =============
 
 [Suicide ArchLinux](https://github.com/darkydtm/suicide-archlinux) is now available from the comfort of Docker!
