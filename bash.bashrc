@@ -28,7 +28,7 @@ function command_not_found_handle {
 }
 
 function __sl_prompt_command {
-     if [[ ( "$?" == "127" || "$?" == "1" ) && -z "$FAILED_AT" ]];
+     if [[ ( "$?" == "127" || "$?" == "1" ) && -z "$FAILED_AT" ]]; then
           FAILED_AT=$((HISTCMD-1))
      fi
 
